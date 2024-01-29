@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Models\College;
 
+use Illuminate\Support\Facades\Session;
+
+use App\Http\Requests\CollegeRequest;
+
+
 
 class CollegeController extends Controller
 {
@@ -23,7 +28,7 @@ class CollegeController extends Controller
     }
 
  
-    public function store(Request $request)
+    public function store(CollegeRequest $request)
     {
            
 
@@ -33,6 +38,7 @@ class CollegeController extends Controller
             $college->name = $request->name;
             $college->note = $request->note;
             $college->save();
+            Session::flash('message', 'Add Success'); 
 
             return redirect()->route('colleges.index');
         }catch (\Exception $e) {
@@ -55,7 +61,7 @@ class CollegeController extends Controller
     //
     }
 
-    public function update(Request $request, $id)
+    public function update(CollegeRequest $request, $id)
     {
         try{
 
@@ -63,6 +69,8 @@ class CollegeController extends Controller
             $college->name = $request->name;        
             $college->note = $request->note;        
             $college->save();
+            Session::flash('message', 'update Success'); 
+
             return redirect()->route('colleges.index');
 
         }catch (\Exception $e) {

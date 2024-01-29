@@ -40,8 +40,8 @@ h4{
     max-width: 264px;
     min-width: 264px;
     /* background: var(--bs-dark); */
-    background-color: #192F59;
-     /* background-color:  #FBFCFC;  */
+    /* background-color: #192F59; */
+    background-color: #1f60dd;
      box-shadow: 20px ;
     /* 00D084 */
     transition:all 0.35s ease-in-out;
@@ -96,7 +96,7 @@ a.sidebar-link{
 
 
 a.sidebar-link:hover{
-     background-color: #00D084 ;
+   background-color: #a3abb4;  
      
 }
 
@@ -123,9 +123,9 @@ a.sidebar-link:hover{
 .navbar-expand .navbar-nav{
     margin-left: auto;
 }
-.navbar {
+/* .navbar {
   background-color:#426dc4 ;
-}
+} */
 
 
 .content{
@@ -241,7 +241,7 @@ a.sidebar-link:hover{
   }
   
   .button-mode {
-    padding: 19px 39px 18px 39px;
+    /* padding: 19px 39px 18px 39px; */
     color: #FFF;
     /* background-color: #4bc970; */
     /* font-size: 18px; */

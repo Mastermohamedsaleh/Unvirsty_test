@@ -8,7 +8,7 @@
 
 
 
-<h3 class="text-success text-center">colleges</h3>
+<h3 class="text-primary text-center">colleges</h3>
 
 
 
@@ -59,7 +59,7 @@
  
 
  <div class="table-responsive">
-                        <table id="datatable"  class="table key-buttons text-md-nowrap">
+                        <table id="datatable" class="table table-hover table-sm table-bordered p-0 text-center" >
                             <thead>
                             <tr>
                                 <th>#</th>

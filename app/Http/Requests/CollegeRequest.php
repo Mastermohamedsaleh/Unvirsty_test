@@ -25,6 +25,7 @@ class CollegeRequest extends FormRequest
     {
         return [
             'name' => 'required|unique:colleges|max:255,'.$this->id,
+            'note' => 'max:2000'
         ];
     }
 }

@@ -81,8 +81,9 @@ class CollegeController extends Controller
     public function destroy($id)
     {
         College ::destroy($id);
-        session()->flash('delete');
-        return redirect()->back();
+        Session::flash('message', 'Delete Success'); 
+
+        return redirect()->route('colleges.index');
 
    
     }
